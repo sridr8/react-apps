@@ -1,11 +1,13 @@
 import React from "react";
 import Card from "./Card";
 import contacts from "../contacts.js"
+import Avatar from "./Avatar";
 
 function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
+      <Avatar imageUrl="https://cdn0.iconfinder.com/data/icons/social-media-network-4/48/male_avatar-512.png"/>
       <Card 
         name={contacts[0].name}
         img={contacts[0].imgURL}
