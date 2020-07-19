@@ -3,12 +3,22 @@ import Card from "./Card";
 import contacts from "../contacts.js"
 import Avatar from "./Avatar";
 
+function createCard(contact) {
+  return <Card 
+     name = {contact.name}
+     img = {contact.imgURL}
+     tel = {contact.phone}
+     email = {contact.email}
+  />
+}
+
 function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
       <Avatar imageUrl="https://cdn0.iconfinder.com/data/icons/social-media-network-4/48/male_avatar-512.png"/>
-      <Card 
+      {contacts.map(createCard)}
+      {/* <Card 
         name={contacts[0].name}
         img={contacts[0].imgURL}
         tel={contacts[0].phone}
@@ -25,7 +35,7 @@ function App() {
         img={contacts[2].imgURL}
         tel={contacts[2].phone}
         email={contacts[2].email}
-      />
+      /> */}
 
     </div>
     
