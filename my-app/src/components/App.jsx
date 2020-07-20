@@ -16,7 +16,7 @@ function createCard(contact) {
 
 
 function App() {
-
+  // setInterval(updateTime, 1000);
   let now = new Date().toLocaleTimeString();
   const [time, setTime] = useState(now);
   function updateTime(){
