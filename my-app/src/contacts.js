@@ -1,10 +1,10 @@
 const contacts = [
   {
-    name: "Beyonce",
+    name: "Angela Yu",
     imgURL:
-      "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
+      "https://pbs.twimg.com/profile_images/744849215675838464/IH0FNIXk_400x400.jpg",
     phone: "+123 456 789",
-    email: "b@beyonce.com"
+    email: "angela@appbrewery.com"
   },
   {
     name: "Jack Bauer",
