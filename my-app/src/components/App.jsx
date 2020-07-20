@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./Card";
 import contacts from "../contacts.js"
 import Avatar from "./Avatar";
+import Time from "./Time"
+
 
 function createCard(contact) {
   return <Card 
@@ -12,10 +14,23 @@ function createCard(contact) {
   />
 }
 
+
 function App() {
+
+  let now = new Date().toLocaleTimeString();
+  const [time, setTime] = useState(now);
+  function updateTime(){
+    let newTime = new Date().toLocaleTimeString();
+    setTime(newTime);
+  }
+
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
+      <Time
+        time={time}
+        update={updateTime}
+      />
       <Avatar imageUrl="https://cdn0.iconfinder.com/data/icons/social-media-network-4/48/male_avatar-512.png"/>
       {contacts.map(createCard)}
       {/* <Card 
