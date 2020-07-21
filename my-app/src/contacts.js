@@ -4,7 +4,7 @@ const contacts = [
     imgURL:
       "https://pbs.twimg.com/profile_images/744849215675838464/IH0FNIXk_400x400.jpg",
     phone: "+123 456 789",
-    email: "angela@appbrewery.com"
+    email: "angela.yu@appbrewery.com"
   },
   {
     name: "Jack Bauer",
