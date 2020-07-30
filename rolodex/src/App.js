@@ -7,7 +7,7 @@ class App extends Component{
     super();
     this.state = { 
       name : 'Jyothi', 
-      occupation : 'Maths Scientist'
+      occupation : 'Maths Teacher'
     };
   }
   render() {
