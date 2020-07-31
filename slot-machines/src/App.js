@@ -8,7 +8,9 @@ class App extends Component {
     return (
       <div>
         <h1>Slot Machines!</h1>
-        <Machine />
+        <Machine s1="🍎" s2="🍎" s3="🍎" />
+        <Machine s1="🍎" s2="🍐" s3="🍎" />
+        <Machine s1="🍑" s2="🍑" s3="🍑" />
       </div>
     );
   }
