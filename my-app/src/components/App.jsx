@@ -1,25 +1,25 @@
 import React, { useState } from "react";
 import Card from "./Card";
-import contacts from "../contacts.js"
+import contacts from "../contacts.js";
 import Avatar from "./Avatar";
-import Time from "./Time"
-
+import Time from "./Time";
 
 function createCard(contact) {
-  return <Card 
-     name = {contact.name}
-     img = {contact.imgURL}
-     tel = {contact.phone}
-     email = {contact.email}
-  />
+  return (
+    <Card
+      name={contact.name}
+      img={contact.imgURL}
+      tel={contact.phone}
+      email={contact.email}
+    />
+  );
 }
-
 
 function App() {
   // setInterval(updateTime, 1000);
   let now = new Date().toLocaleTimeString();
   const [time, setTime] = useState(now);
-  function updateTime(){
+  function updateTime() {
     let newTime = new Date().toLocaleTimeString();
     setTime(newTime);
   }
@@ -27,11 +27,8 @@ function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
-      <Time
-        time={time}
-        update={updateTime}
-      />
-      <Avatar imageUrl="https://cdn0.iconfinder.com/data/icons/social-media-network-4/48/male_avatar-512.png"/>
+      <Time time={time} update={updateTime} />
+      <Avatar imageUrl="https://cdn0.iconfinder.com/data/icons/social-media-network-4/48/male_avatar-512.png" />
       {contacts.map(createCard)}
       {/* <Card 
         name={contacts[0].name}
@@ -51,9 +48,7 @@ function App() {
         tel={contacts[2].phone}
         email={contacts[2].email}
       /> */}
-
     </div>
-    
   );
 }
 
