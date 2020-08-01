@@ -11,7 +11,9 @@ class App extends Component {
         <h1>Slot Machines!</h1>
         <Machine s1="🍎" s2="🍎" s3="🍎" />
         <Machine s1="🍎" s2="🍐" s3="🍎" />
-        <Machine s1="🍑" s2="🍑" s3="🍑" />
+        <Machine s1="🍑" s2="🥝" s3="🍑" />
+        <Machine s1="🥕" s2="🥕" s3="🥕" />
+        <Machine s1="🥕" s2="🍈" s3="🍇" />
         <Rando maxNum={7} />
       </div>
     );
