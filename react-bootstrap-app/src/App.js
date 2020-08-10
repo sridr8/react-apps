@@ -1,31 +1,37 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import {
   Button,
-  Card,
+  Container,
+  Row,
+  Col,
   Alert,
   Breadcrumb,
   BreadcrumbItem,
-  CardImg,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Card>
-          <CardImg></CardImg>
-        </Card>
-        <Breadcrumb>
-          <BreadcrumbItem>Item1</BreadcrumbItem>
-          <BreadcrumbItem>Item2</BreadcrumbItem>
-          <BreadcrumbItem>Item3</BreadcrumbItem>
-        </Breadcrumb>
-        <Alert>This is a button</Alert>
-        <Button>Test Button</Button>
-      </header>
+      <Container>
+        <Row className="row">
+          <Col className="column">1 of 2</Col>
+          <Col> className='column'2 of 2</Col>
+        </Row>
+        <Row className="row">
+          <Col className="column">1 of 3</Col>
+          <Col className="column">2 of 3</Col>
+          <Col className="column">3 of 3</Col>
+        </Row>
+      </Container>
+      <Breadcrumb>
+        <BreadcrumbItem>Item1</BreadcrumbItem>
+        <BreadcrumbItem>Item2</BreadcrumbItem>
+        <BreadcrumbItem>Item3</BreadcrumbItem>
+      </Breadcrumb>
+      <Alert>This is a button</Alert>
+      <Button>Test Button</Button>
     </div>
   );
 }

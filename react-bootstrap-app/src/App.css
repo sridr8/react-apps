@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.row {
+  border: 2px solid green;
+}
+
+.column {
+  border: 1px solid aliceblue;
+}
