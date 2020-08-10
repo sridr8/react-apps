@@ -1,26 +1,30 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "react-bootstrap";
+import {
+  Button,
+  Card,
+  Alert,
+  Breadcrumb,
+  BreadcrumbItem,
+  CardImg,
+} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Card>
+          <CardImg></CardImg>
+        </Card>
+        <Breadcrumb>
+          <BreadcrumbItem>Item1</BreadcrumbItem>
+          <BreadcrumbItem>Item2</BreadcrumbItem>
+          <BreadcrumbItem>Item3</BreadcrumbItem>
+        </Breadcrumb>
+        <Alert>This is a button</Alert>
         <Button>Test Button</Button>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
